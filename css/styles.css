@@ -1,0 +1,401 @@
+html, body {
+    height: 100%;
+    background: rgb(19,148,161);
+    background: linear-gradient(0deg, rgba(19,148,161,1) 0%, rgba(34,221,200,1) 50%, rgba(37,70,143,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+  }
+
+.headline {
+    height: 120px;
+    width: 270px;
+    display: initial;
+
+}
+h1 { 
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a900ff, 0 0 20px #287ca7, 0 0 30px #18f3ff, 0 0 40px #1c18ff, 0 0 55px #18ffce, 0 0 75px #8818ff;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Monoton', cursive;
+    justify-content: center;
+    display: flex;
+    background-size: 4%;
+    margin-top: 20px;
+}
+.myH1 {
+    font-size: 63px;
+    margin-bottom: 48px;
+    margin-top: 25px;
+}
+
+.searching {
+  text-shadow: 0 -1px 4px rgb(0 149 255), 0 -2px 10px rgb(88 255 232);
+  font-size: 25px;
+  font-family: 'Fredoka One';
+  color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    visibility: visible;
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+    text-shadow: 0 -1px 4px rgb(0 111 255), 0 -2px 10px rgb(0 255 102);
+}
+
+.coin {
+    height: 275px;
+    width: 431px;
+    border: 1px solid black;
+    margin: 10px; 
+    box-shadow: -6px 10px 17px 1px #000000;
+    border-radius: 3%;
+    background-image: url("../assets/images/backgroundForDiv.jpg");
+    position: relative;
+}
+.coin:hover {
+    transform: translateY(-10px);
+  }
+
+.symbol {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline solid rgb(49, 248, 255);
+    color: rgb(82, 185, 211);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 0 -1px 4px rgb(0, 68, 255), 0 -2px 10px rgb(19, 99, 146);
+    position: absolute;
+    top: 19px;
+    left: 47px;
+    width: 70%;
+    height: 17%;
+    display: inline-block;
+}
+.name{
+    position: absolute;
+    top: 132px;
+    left: 47px;
+    color: rgb(167 240 254);
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0px;
+    font-size: 25px;
+    text-shadow: 0 -1px 4px rgb(4 31 66), 0 -2px 10px rgb(16 104 138);
+    width: 70%;
+    height: 15%;
+}
+
+.btn-more-info{
+    color: #fff;
+    background-color: #15aae6;
+    border-color: #02448b;
+    position: absolute;
+    right: 87px;
+    top: 79%;
+}
+
+#loading {
+    text-align: center;
+    visibility: hidden;
+}
+
+#loading > img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.more-info {
+  padding: 5px;
+  box-shadow: 3px 2px 23px -2px #71d1db;
+  border-radius: 6%;
+  border: 3px solid #179871;
+  width: 27%;
+  height: 140px;
+  background: rgb(0,255,179);
+  background: radial-gradient(circle, rgba(0,255,179,1) 0%, rgba(40,74,64,1) 100%);
+  position: absolute;
+  top: 24%;
+  display: none;
+  right: 17%;
+}
+
+.switch {
+    position: absolute;
+    top: 15px;
+    left: 71%;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(42, 124, 144);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #24dbad;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  input {
+      border-radius: 7px;
+      background-color: rgb(255, 255, 255);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-shadow: 0 -2px 10px rgb(16 104 138);
+    }
+
+  .topnav {
+    overflow: hidden;
+    margin-top: 32px;
+    background-color: #111538;;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #184eed;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+
+.myOwnNavbar {
+    background-color: darkblue;
+    justify-content: left;
+    width: 100%;
+}
+
+.btn-outline-info {
+    border: 0px;
+    margin-top: -7px;
+    margin-bottom: -8px;
+    border-color: #212529;
+}
+#coinSearch { 
+    width: 15%;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+#about_card {
+  visibility: hidden;
+  display: block;
+  padding: 10px;
+  margin: 15px;
+  text-shadow: 0 -1px 4px #00f3f5, 0 -2px 10px #00daff, 0 -10px 20px #00ceff, 0 -18px 40px #0600ff;
+  font-size: 39px;
+  font-family: 'Fredoka One';
+}
+
+#about_card > div {
+    display: flex;
+    justify-content: center;
+}
+
+.picOfMe > img {
+  margin-top: 55px;
+  border: 4px solid black;
+  border-radius: 2%;
+  box-shadow: 0 -1px 4px #00f3f5, 0 -2px 10px #00daff, 0 -10px 20px #00ceff, 0 -18px 40px #0600ff;
+}
+
+.hide{
+  display: none;
+  
+}
+.tooManyCoins {
+  background: linear-gradient(164deg, rgb(58 180 119) 0%, rgb(29 248 253 / 76%) 50%, rgb(69 220 252 / 2%) 100%);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 62%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  margin-left: 38%;
+  margin-top: 13%;
+  justify-content: center;
+  padding: 10px;
+  border: 6px solid #000000;
+  width: 23%;
+  box-shadow: 1px -1px 20px 20px #2097ab;
+  border-radius: 3%;
+}
+
+.symbolRemove {
+  width: 147px;
+  height: 85px;
+  margin-bottom: 6px;
+  background-color: rgba(4, 4, 4, 0.945);
+  border: 3px;
+  border-radius: 4%;
+  padding-top: 4px;
+  box-shadow: -7px 6px 20px 5px #3995ab;
+}
+
+li {
+  font-size: 18px;
+  color: rgb(255 255 255);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-shadow: 0 -1px 4px rgb(0 149 255), 0 -2px 10px rgb(88 255 232);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h5{
+  color: rgb(167 240 254);
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 0 -1px 4px rgb(4 31 66), 0 -2px 10px rgb(16 104 138);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: -19px;
+}
+.tooManyPicked{
+  justify-content: center;
+  margin: 1px;
+  padding-top: 0px;
+  text-align: -webkit-center;
+}
+.more-info > img {
+  position: absolute;
+  left: 29%;
+  top: 58%;
+}
+.more-info > span{
+    margin: 3px;
+}
+@media screen and (max-width: 360px) {
+[type=search] {
+  width: 116px;
+}
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h5 {
+    font-size: 13px;
+}
+.tooManyCoins {
+  height: 72%;
+  margin-left: 23%;
+  margin-top: 32%;
+  width: 60%;
+}
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #about_card > div {
+    font-size: 30px;
+    }
+  #container {
+    font-size: 11px;
+  }
+  .myH1 {
+    font-size: 38px;
+  }
+  .picOfMe > img {
+    width: 200px;
+    height: 200px;
+}
+.more-info > img {
+  left: 20%;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+  .tooManyCoins {
+    width: 44%;
+  }
+
+}
+#boxSearch {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+}
